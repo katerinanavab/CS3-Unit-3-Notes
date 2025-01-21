@@ -9,7 +9,6 @@ def index():
     # return "Hello, world!"
     return render_template("index.html")
 
-
 @app.route("/hello/")
 @app.route("/hello/<name_data>")
 def hello_there(name_data = None):
@@ -18,3 +17,5 @@ def hello_there(name_data = None):
 # Allows you to click RUN button
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5421)
+
+
